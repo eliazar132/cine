@@ -22,10 +22,3 @@ Ideal para los amantes del cine que buscan descubrir nuevas historias y comparti
 | Frontend | php, CSS |
 | Base de datos | pelicula |
 
----
-
-## ⚙️ Instalación y ejecución
-
-1. Clona este repositorio:
-   ```bash
-   git clone https://github.com/tuusuario/movierecs.git
