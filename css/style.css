@@ -1,0 +1,195 @@
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #000;
+    color: #f0f0f0;
+    overflow-x: hidden;
+}
+
+/* Fade-in general secuencial */
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 40px auto;
+    text-align: center;
+}
+
+/* Título principal */
+h1 {
+    font-size: 32px;
+    margin-bottom: 30px;
+    color: #ff4500;
+    opacity: 0;
+    animation: fadeInUp 0.8s forwards;
+    animation-delay: 0.2s;
+}
+
+/* Card película */
+.movie-card {
+    background: #1c1c1c;
+    border-radius: 15px;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 500px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.8);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease;
+    opacity: 0;
+    animation: fadeInUp 0.8s forwards;
+    animation-delay: 0.4s;
+}
+.movie-card:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 12px 30px rgba(255,69,0,0.5);
+    filter: brightness(1.1);
+}
+.movie-card img {
+    width: 100%;
+    max-width: 350px;
+    border-radius: 12px;
+    margin-bottom: 15px;
+    border: 2px solid #ff4500;
+    transition: transform 0.3s ease;
+}
+.movie-card img:hover {
+    transform: scale(1.03);
+}
+
+/* Navegación */
+.navigation {
+    margin-top: 25px;
+    opacity: 0;
+    animation: fadeInUp 0.8s forwards;
+    animation-delay: 0.6s;
+}
+.navigation a {
+    padding: 10px 20px;
+    margin: 5px;
+    background: #ff4500;
+    color: #fff;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 14px;
+    transition: transform 0.2s ease, background 0.3s ease;
+}
+.navigation a:hover {
+    background: #e03e00;
+    transform: scale(1.05);
+}
+
+/* Formulario de opinión */
+.form-box {
+    margin-top: 35px;
+    background: #1c1c1c;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(255,69,0,0.3);
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    transition: transform 0.3s ease;
+    opacity: 0;
+    animation: fadeInUp 0.8s forwards;
+    animation-delay: 0.8s;
+}
+.form-box:hover {
+    transform: translateY(-3px);
+}
+.form-box h2 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #fff;
+}
+.form-box textarea {
+    width: 100%;
+    border-radius: 8px;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #444;
+    background: #0a0a0a;
+    color: #fff;
+    resize: vertical;
+    transition: border-color 0.3s ease;
+}
+.form-box textarea:focus {
+    border-color: #ff4500;
+}
+.form-box button {
+    margin-top: 12px;
+    padding: 10px 18px;
+    background: #ff4500;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+.form-box button:hover {
+    background: #e03e00;
+    transform: scale(1.05);
+}
+
+/* Historial de opiniones */
+.history {
+    margin-top: 40px;
+    opacity: 0;
+    animation: fadeInUp 0.8s forwards;
+    animation-delay: 1s;
+}
+.history h2 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #fff;
+}
+.history table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+}
+.history th, .history td {
+    border: 1px solid #444;
+    padding: 8px 10px;
+    text-align: left;
+    transition: background 0.3s ease;
+}
+.history th {
+    background: #ff4500;
+    color: #fff;
+}
+.history td {
+    background: #1c1c1c;
+    color: #ccc;
+}
+.history tr:hover td {
+    background: #2c2c2c;
+}
+.history td button {
+    padding: 5px 10px;
+    font-size: 12px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+.history td button:first-child {
+    background: #ffc107;
+    color: #000;
+}
+.history td button:last-child {
+    background: #dc3545;
+    color: #fff;
+}
+.history td button:hover {
+    opacity: 0.85;
+    transform: scale(1.05);
+}
+</style>
